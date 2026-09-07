@@ -1112,18 +1112,18 @@ export default function AppShellPage() {
               </>
             )}
 
-            {activeNav === 'import' && (
-              <>
-                <div className="screen-hero">
-                  <div>
-                    <span className="eyebrow">Import</span>
-                    <h2>Bring your archive in</h2>
-                    <p>Import CSV, JSON, or a previous export backup.</p>
-                  </div>
-                  <button className="primary-btn" type="button">
-                    Select file
-                  </button>
-                </div>
+        {activeNav === 'import' && (
+          <div className="screen-hero">
+            <div>
+              <span className="eyebrow">Import</span>
+              <h2>Bring your archive in</h2>
+              <p>Data import functionality is currently under development (Coming Soon).</p>
+            </div>
+              <button className="primary-btn" type="button" disabled>
+              Select file (Coming Soon)
+              </button>
+            </div>
+          )}
 
                 <div className="screen-grid">
                   <div className="summary-card">
