@@ -1113,16 +1113,36 @@ export default function AppShellPage() {
             )}
 
             {activeNav === 'import' && (
-              <div className="screen-hero">
-                <div>
-                  <span className="eyebrow">Import</span>
-                  <h2>Bring your archive in</h2>
-                  <p>Import CSV, JSON, or a previous export backup.</p>
+              <>
+                <div className="screen-hero">
+                  <div>
+                    <span className="eyebrow">Import</span>
+                    <h2>Bring your archive in</h2>
+                    <p>Import CSV, JSON, or a previous export backup.</p>
+                  </div>
+                  <button className="primary-btn" type="button">
+                    Select file
+                  </button>
                 </div>
-                <button className="primary-btn" type="button">
-                  Select file
-                </button>
-              </div>
+
+                <div className="screen-grid">
+                  <div className="summary-card">
+                    <span className="eyebrow">Supported Formats</span>
+                    <strong>JSON &amp; CSV</strong>
+                    <span>UTF-8 encoded files (.json, .csv)</span>
+                  </div>
+                  <div className="summary-card">
+                    <span className="eyebrow">Required Fields</span>
+                    <strong>Title &amp; Category</strong>
+                    <span>Category: Book, Film, Series, Manga, Anime, Game</span>
+                  </div>
+                  <div className="summary-card">
+                    <span className="eyebrow">Optional Metadata</span>
+                    <strong>Progress &amp; Rating</strong>
+                    <span>Rating (0–5), status, creator, description, and tags</span>
+                  </div>
+                </div>
+              </>
             )}
           </div>
         )}
